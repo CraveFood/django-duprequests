@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+#Ipython Notebook
+.ipynb_checkpoints
+
+# Editors
+.idea
+.vscode
+.ropeproject
+
+# Databases
+*.sqlite3
+
+# vim
+*.swp
+*.swo
+
+# Vagrant
+.vagrant/
+
+# OS X
+.DS_STORE
+
+# Coverage
+.Coverage

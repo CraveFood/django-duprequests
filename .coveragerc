@@ -1,0 +1,8 @@
+[run]
+branch = True
+include =
+    duprequests/*
+
+[report]
+show_missing = True
+precision = 2
