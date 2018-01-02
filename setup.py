@@ -1,8 +1,16 @@
+import os
+
 from setuptools import setup
+
+here = os.path.abspath(os.path.dirname(__file__))
+
+# Readme description
+with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name='django-duprequests',
-    version=open('VERSION', 'r').read(),
+    version='0.1.3',
     packages=['duprequests'],
     install_requires=['Django'],
     url='https://github.com/CraveFood/django-duprequests',
@@ -10,7 +18,7 @@ setup(
     author='Sergio Oliveira',
     author_email='seocam@seocam.com',
     description='Drop duplicated requests',
-    long_description=open('README.md', 'r').read(),
+    long_description=long_description,
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
