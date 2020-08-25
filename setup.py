@@ -10,7 +10,7 @@ with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='django-duprequests',
-    version='0.1.3',
+    version='0.1.4',
     packages=['duprequests'],
     install_requires=['Django'],
     url='https://github.com/CraveFood/django-duprequests',
