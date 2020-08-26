@@ -119,6 +119,13 @@ class TestDropDuplicatedRequests(TestCase):
         response_2 = self._call_view_using_middleware("put", body={"a": "b"})
         self.assertEqual(response_2.status_code, 304)
 
+    def test_request_with_file_in_body_should_not_break(self):
+        file_upload = bytes.fromhex("abcd1234")
+        response_1 = self._call_view_using_middleware("put", body=file_upload)
+        self.assertEqual(response_1.status_code, 200)
+        response_2 = self._call_view_using_middleware("put", body=file_upload)
+        self.assertEqual(response_2.status_code, 304)
+
     def test_set_cookie(self):
         response = self._call_view_using_middleware('get')
         self.assertIn(COOKIE_NAME, response.cookies)

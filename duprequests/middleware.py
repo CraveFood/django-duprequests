@@ -35,7 +35,7 @@ class DropDuplicatedRequests(MiddlewareMixin):
             + "--"
             + urlencode(request.GET)
             + "--"
-            + request.body.decode("utf-8"),
+            + request.body.hex(),
         ).node
         return str(hash_value)
 
