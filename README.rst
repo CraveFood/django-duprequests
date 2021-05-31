@@ -69,6 +69,8 @@ Authors
    `Seocam <https://github.com/seocam>`__
 -  **Danilo Martins** - *Packaging and distribution* -
    `Mawkee <https://github.com/mawkee>`__
+-  **Thiago Ferreira** - *Improvements, bug fixes and current maintainer* -
+   `thiagoferreiraw <https://github.com/thiagoferreiraw>`__   
 
 License
 -------
